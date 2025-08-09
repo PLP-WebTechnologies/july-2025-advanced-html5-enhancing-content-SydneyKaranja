@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 10px;
+                text-align: left;
+            }
+        </style>
+        <title>Week 2 - Advanced HTML Elements</title>
+    </head>
+    <body>
+        <h1>Definition Lists</h1>
+        <dl>
+            <dt>AU</dt>
+            <dd>African Union</dd>
+            <dt>EU</dt>
+            <dd>European Union</dd>
+            <dt>UN</dt>
+            <dd>United Nations</dd>
+        </dl>
+        <h1>Nested Lists</h1>
+        <ol type ="A">
+            <li>Africa
+                <ul type="circle">
+                    <li>Kenya</li>
+                    <li>Nigeria</li>
+                    <li>South Africa</li>
+                </ul> 
+            </li>
+            <li>Asia
+                <ul type="square">
+                    <li>China</li>
+                    <li>Japan</li>
+                    <li>India</li>
+                </ul>
+            </li>
+            <li>Europe
+                <ul type="bullet">
+                    <li>Germany</li>
+                    <li>France</li>
+                    <li>Italy</li>
+                </ul>
+            </li>
+        </ol>
+        <h1>Multimedia</h1>
+        <h2>Images</h2>
+        <img src="https://images.pexels.com/photos/865530/pexels-photo-865530.jpeg?cs=srgb&dl=pexels-diaznash-865530.jpg&fm=jpg&_gl=1*pzgkh9*_ga*MTIxMDg2ODU5LjE3NTQzMDkzMTU.*_ga_8JE65Q40S6*czE3NTQ3NDQzMjYkbzMkZzEkdDE3NTQ3NDQzNzYkajEwJGwwJGgw"
+             alt="Street of Nairobi" width="300" height="200">
+        <img src="https://images.pexels.com/photos/2506923/pexels-photo-2506923.jpeg?cs=srgb&dl=pexels-apasaric-2506923.jpg&fm=jpg&_gl=1*8da5a5*_ga*MTIxMDg2ODU5LjE3NTQzMDkzMTU.*_ga_8JE65Q40S6*czE3NTQ3NDQzMjYkbzMkZzEkdDE3NTQ3NDUxNjQkajM5JGwwJGgw"
+             alt="Tokyo at Night" width="300" height="200">
+        <img src="https://images.pexels.com/photos/1128424/pexels-photo-1128424.jpeg?cs=srgb&dl=pexels-stuthnagyniki-1128424.jpg&fm=jpg&_gl=1*1d9kn44*_ga*MTIxMDg2ODU5LjE3NTQzMDkzMTU.*_ga_8JE65Q40S6*czE3NTQ3NDQzMjYkbzMkZzEkdDE3NTQ3NDUzMDgkajM2JGwwJGgw"
+             alt="Konzerthaus Berlin Building" width="300" height="200">
+        <h2>Audio</h2>
+        <audio controls>
+            <source src="https://open.spotify.com/track/5H7EMoiGpJf6atP8APiNHK?si=7d336b750fa44461" type="audio/mp3">
+            Your browser does not support the audio playback.
+        </audio>
+        <h2>Video</h2>
+        <video width="320" height="240" controls>
+            <source src="https://www.pexels.com/download/video/2062566/" type="video/mp4">
+            Your browser does not support the video playback.
+            <source src="https://www.pexels.com/download/video/854041/" type="video/mp4">
+            Your browser does not support the video playback.
+        </video>
+        <h1>Tables</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Country</th>
+                    <th>Capital City</th>
+                    <th>Continent</th>
+                    <th>Nationality</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kenya</td>
+                    <td>Nairobi</td>
+                    <td>Africa</td>
+                    <td>Kenyan</td>
+                </tr>
+                <tr>
+                    <td>Japan</td>
+                    <td>Tokyo</td>
+                    <td>Asia</td>
+                    <td>Japanese</td>
+                </tr>
+                <tr>
+                    <td>Germany</td>
+                    <td>Berlin</td>
+                    <td>Europe</td>
+                    <td>German</td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>Enhanced Form</h1>
+        <form autocomplete="on">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required autocomplete="off">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select Country:</option>
+                <option value="kenya">Kenya</option>
+                <option value="japan">Japan</option>
+                <option value="germany">Germany</option>
+            </select>
+            <br>
+            <label for="contact">Contact:</label>
+            <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" minlength="10" maxlength="14" required>
+            <br>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
